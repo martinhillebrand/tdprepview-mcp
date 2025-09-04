@@ -1,0 +1,27 @@
+[project]
+name = "tdprepview-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.13.1",
+    "tdprepview>=1.5.0",
+    "seaborn>=0.12.0",
+    "plotly>=5.15.0",
+    "kaleido>=0.2.1",
+    "onnx>=1.15.0",
+    "skl2onnx>=1.16.0",
+]
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "python-dotenv",  # useful for loading .env files
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "python-dotenv>=1.1.1",
+]
